@@ -2,9 +2,31 @@
 
 html {
   font-family: PingFangSC, "PingFang SC", "Helvetica Neue", -apple-system, Arial, sans-serif;
+  font-size: $main-font;
+  color: $main-color;
 }
 
 body {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: $biggest-font;
+}
+
+h3 {
+  font-size: $bigger-font;
+}
+
+label,
+a {
+  font-size: $big-font;
+}
+
+h4,
+p {
+  font-size: $main-font;
 }
 
 @import './homepage';
