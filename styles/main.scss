@@ -3,12 +3,14 @@
 html {
   font-family: PingFangSC, "PingFang SC", "Helvetica Neue", -apple-system, Arial, sans-serif;
   font-size: $main-font;
+  font-weight: 300;
   color: $main-color;
 }
 
 body {
   padding: 0;
   margin: 0;
+  min-width: 1024px;
 }
 
 h2 {
@@ -22,6 +24,7 @@ h3 {
 label,
 a {
   font-size: $big-font;
+  text-decoration: none;
 }
 
 h4,
@@ -46,6 +49,68 @@ ul {
 
 .text-left {
   text-align: left;
+}
+
+.header {
+  position: relative;
+  padding-top: 35%;
+  color: $white;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__detail {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin:  20px auto;
+  }
+
+  &__logo {
+    display: inline-block;
+  }
+
+  &__logo img {
+    max-height: 50px;
+  }
+}
+
+.header-nav {
+  display: inline-block;
+  float: right;
+   margin: 20px 0;
+  font-size: $big-font;
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    margin: 0 14px;
+    color: $white;
+    font-size: inherit;
+
+    &.language {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &:not(.language):hover {
+      color: black;
+      background-color: $theme-color;
+      border-radius: 4px;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+  }
 }
 
 @import './homepage';
