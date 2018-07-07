@@ -3,6 +3,7 @@
 html {
   font-family: PingFangSC, "PingFang SC", "Helvetica Neue", -apple-system, Arial, sans-serif;
   font-size: $main-font;
+  font-weight: 300;
   color: $main-color;
 }
 
@@ -22,6 +23,7 @@ h3 {
 label,
 a {
   font-size: $big-font;
+  text-decoration: none;
 }
 
 h4,
@@ -29,14 +31,68 @@ p {
   font-size: $main-font;
 }
 
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .header {
+  position: relative;
   padding-top: 33%;
+  color: $white;
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
+
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__detail {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: auto;
+  }
+}
+
+.header-nav {
+  display: inline-block;
+  float: right;
+  font-size: $big-font;
+
+  a {
+    display: block;
+    padding: 7px 10px;
+    margin: 0 16px;
+    color: $white;
+    font-size: inherit;
+  }
+
+  &__item {
+    display: inline-block;
+  }
 }
 
 @import './homepage';
 @import './about-us';
 @import './overseas-warehouse';
+@import './warehouse-integration';
