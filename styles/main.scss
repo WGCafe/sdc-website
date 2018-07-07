@@ -29,6 +29,14 @@ p {
   font-size: $main-font;
 }
 
+.header {
+  padding-top: 33%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+
 @import './homepage';
 @import './about-us';
 @import './overseas-warehouse';
