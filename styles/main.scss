@@ -51,6 +51,16 @@ ul {
   text-align: left;
 }
 
+.col-3 {
+  float: left;
+  width: 25%;
+}
+
+.col-9 {
+  float: left;
+  width: 75%;
+}
+
 .header {
   position: relative;
   padding-top: 35%;
@@ -110,6 +120,17 @@ ul {
 
   &__item {
     display: inline-block;
+  }
+}
+
+.footer {
+  background-color: $dark-gray;
+  color: $footer-color;
+
+  &__content:after {
+    content: "";
+    display: block;
+    clear: both;
   }
 }
 
