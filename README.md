@@ -34,3 +34,6 @@ release as a tar.gz package file.
 npm run release
 ```
 
+# Coding rules
+ 
+ see /doc/rules.md
