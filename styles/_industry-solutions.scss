@@ -20,7 +20,7 @@
       width:138px;
       height: 138px;
       border-radius: 50%;
-      border: 1px dotted $middle-gray-1;
+      border: 1px dotted $theme-color;
     }
 
   &__item-in{
@@ -28,7 +28,8 @@
     width:114px;
     height: 114px;
     border-radius: 50%;
-    border: 3px solid $middle-gray-1;
+    border: 3px solid $theme-color;
+    background-color: $theme-color;
     text-align: center;
     margin: auto;
     left: 0;
@@ -79,17 +80,5 @@
 	&__block-text {
 		display: inline-block;
 		margin-bottom: 5px;
-	}
-
-	&__block-img--clothes {
-		background-image: url('../icon.png');
-	}
-
-	&__block-img--makeup {
-		background-image: url('../icon.png');
-	}
-
-	&__block-img--shop {
-		background-image: url('../icon.png');
 	}
 }
