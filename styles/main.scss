@@ -113,6 +113,14 @@ ul {
   }
 }
 
+.intro__block {
+	width: 50%;
+	height: 480px;
+	background-color: $middle-gray-2;
+	float: left;
+	box-sizing: border-box;
+}
+
 @import './homepage';
 @import './about-us';
 @import './overseas-warehouse';

@@ -55,12 +55,7 @@
 
 .is-intro {
 	&__block {
-		width: 50%;
-		height: 480px;
-		background-color: $middle-gray-2;
-		float: left;
 		padding: 105px 150px 0 105px ;
-		box-sizing: border-box;
 
 		h3 {
 			font-weight: normal;
@@ -86,8 +81,15 @@
 		margin-bottom: 5px;
 	}
 
-	&__block-img {
+	&__block-img--clothes {
 		background-image: url('../icon.png');
-		padding: 0;
+	}
+
+	&__block-img--makeup {
+		background-image: url('../icon.png');
+	}
+
+	&__block-img--shop {
+		background-image: url('../icon.png');
 	}
 }
