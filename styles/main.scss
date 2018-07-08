@@ -51,6 +51,10 @@ ul {
   text-align: left;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .col-3 {
   float: left;
   width: 25%;
@@ -134,6 +138,11 @@ ul {
     color: inherit;
   }
 
+  hr {
+    border-width: 1px 0 0 0;
+    opacity: 0.3;
+  }
+
   li {
     line-height: 1.5em;
   }
@@ -152,6 +161,37 @@ ul {
   &__phones {
     float: right;
     padding: 20px 7% 20px 0;
+  }
+
+  &__nav {
+    padding: 15px 0 10px;
+    margin: 0 -12px;
+    font-size: $bigger-font;
+  }
+
+  &__nav-item,
+  &__extraInfo-item {
+    display: inline-block;
+    margin-right: 50px;
+
+    a {
+      padding: 6px 12px;
+      font-size: inherit;
+    }
+  }
+
+  &__extraInfo {
+    padding: 10px 0;
+  }
+
+  &__extraInfo-item {
+    margin-right: 30px;
+    font-size: $small-font;
+  }
+
+  &__qrcode {
+    margin: 35px 0;
+    max-width: 130px;
   }
 }
 
