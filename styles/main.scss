@@ -33,7 +33,7 @@ p {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 }
 
@@ -49,6 +49,16 @@ ul {
 
 .text-left {
   text-align: left;
+}
+
+.col-3 {
+  float: left;
+  width: 25%;
+}
+
+.col-9 {
+  float: left;
+  width: 75%;
 }
 
 .header {
@@ -113,8 +123,28 @@ ul {
   }
 }
 
+.footer {
+  background-color: $dark-gray;
+  color: $footer-color;
+
+  &__content:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.intro__block {
+	width: 50%;
+	height: 480px;
+	background-color: $middle-gray-2;
+	float: left;
+	box-sizing: border-box;
+}
+
 @import './homepage';
 @import './about-us';
 @import './overseas-warehouse';
 @import './warehouse-integration';
-@import './industry-solutions'
+@import './industry-solutions';
+@import './service';

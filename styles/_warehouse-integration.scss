@@ -35,6 +35,10 @@
   padding: 85px 0 100px;
   background: $light-gray;
 
+  &__wrapper {
+    width: 1000px;
+  }
+
   &__title {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -49,9 +53,15 @@
   &__item {
     position: relative;
     display: inline-block;
-    width: 33.33%;
+    width: 30%;
+    margin-right: 5%;
     margin-bottom: 50px;
     text-align: left;
+    vertical-align: top;
+  }
+
+  &__item-last {
+    margin-right: 0;
   }
 
   &__item-img {
