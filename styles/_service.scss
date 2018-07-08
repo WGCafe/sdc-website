@@ -1,0 +1,38 @@
+@import './var';
+
+.service {
+	&__title {
+		width: 690px;
+		margin: 50px auto 85px;
+	}
+}
+
+.service-intro {
+	&__block {
+		padding: 97px 130px 0 115px;
+	}
+
+	&__block-img--mw {
+		background-image: url('../icon.png');
+	}
+
+	&__block-img--wi {
+		background-image: url('../icon.png');
+	}
+
+	&__block-img--ow {
+		background-image: url('../icon.png');
+	}
+
+	&__more {
+		display: inline-block;
+		width: 96px;
+		height: 20px;
+		background-color: $light-yellow;
+		border-radius: 2px;
+		text-align: center;
+    line-height: 1.5;
+    font-size: $main-font;
+    color: $black;
+	}
+}
