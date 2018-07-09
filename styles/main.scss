@@ -1,5 +1,9 @@
 @import './var';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: PingFangSC, "PingFang SC", "Helvetica Neue", -apple-system, Arial, sans-serif;
   font-size: $main-font;
@@ -55,6 +59,11 @@ ul {
   text-align: right;
 }
 
+.table-top {
+  display: table-cell;
+  vertical-align: top;
+}
+
 .col-3 {
   float: left;
   width: 25%;
@@ -70,6 +79,11 @@ ul {
   width: 20%;
 }
 
+.col-6 {
+  float: left;
+  width: 50%;
+}
+
 .col-9 {
   float: left;
   width: 75%;
@@ -79,7 +93,7 @@ ul {
   position: relative;
   padding-top: 35%;
   color: $white;
-  background-color: black;
+  background-color: $dark-gray;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
@@ -110,7 +124,7 @@ ul {
 .header-nav {
   display: inline-block;
   float: right;
-   margin: 20px 0;
+  margin: 20px 0;
   font-size: $big-font;
 
   a {
