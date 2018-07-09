@@ -13,21 +13,33 @@
 
   &__list {
     margin-top: 44px;
-    font-size: 0;
+    overflow: hidden;
   }
 
   &__item {
-    width: 20%;
-    text-align: center;
     display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0 22px;
   }
 
-  &__item-img {
-    background: black;
+  &__item-content {
+    display: table-cell;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: 0 auto;
+    vertical-align: middle;
+    background-image: url(../img/common-oval-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  &__item-text {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
   }
 }
 
