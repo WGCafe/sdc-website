@@ -13,31 +13,39 @@
 
   &__list {
     margin-top: 44px;
-    font-size: 0;
+    overflow: hidden;
   }
 
   &__item {
-    width: 20%;
-    text-align: center;
     display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0 22px;
   }
 
-  &__item-img {
-    background: black;
+  &__item-content {
+    display: table-cell;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: 0 auto;
+    vertical-align: middle;
+    background-image: url(../img/common-oval-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  &__item-text {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
   }
 }
 
 .wi-advantage {
   padding: 85px 0 100px;
   background: $light-gray;
-
-  &__wrapper {
-    width: 1000px;
-  }
 
   &__title {
     margin-top: 10px;
@@ -46,38 +54,35 @@
   }
 
   &__list {
-    font-size: 0;
     margin-top: 42px;
+    overflow: hidden;
   }
 
   &__item {
-    position: relative;
-    display: inline-block;
-    width: 30%;
-    margin-right: 5%;
+    display: table;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-bottom: 50px;
     text-align: left;
     vertical-align: top;
   }
 
-  &__item-last {
-    margin-right: 0;
+  &__item-img-wrapper {
+    display: table-cell;
+    vertical-align: top;
   }
 
   &__item-img {
-    display: inline-block;
     background: black;
-    width: 64px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    top: 0;
+    width: 50px;
+    height: 50px; //TODO: remove it
   }
 
   &__item-intro {
     display: inline-block;
     max-width: 220px;
-    padding-left: 25%;
+    padding-left: 10px;
   }
 
   &__item-title {
