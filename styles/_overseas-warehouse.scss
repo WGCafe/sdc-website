@@ -1,3 +1,24 @@
+.ow-description {
+  padding: 0 15px;
+  margin: 40px auto 0;
+
+  &__title {
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  &__text {
+    line-height: 1.5em;
+    padding: 10px;
+    margin: 0;
+  }
+
+  &__img {
+    max-width: 785px;
+    margin: 40px 0;
+  }
+}
+
 .ow-advantage {
   padding: 85px 0 100px;
   background: $light-gray;
@@ -50,28 +71,10 @@
   &__item-title {
     margin-top: 0;
     margin-bottom: 10px;
-    color: $darker-gray;    
+    color: $darker-gray;
   }
 
   &__item-text {
     margin: 0;
-  }
-}
-
-.ow-description {
-  &__title {
-    margin: 50px auto 20px;
-  }
-
-  &__text {
-    width: 940px;
-    height: 80px;
-    text-align: left;
-  }
-
-  &__img {
-    width: 785px;
-    height: 387px;
-    margin-bottom: 40px;
   }
 }
