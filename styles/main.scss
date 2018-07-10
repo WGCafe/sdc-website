@@ -17,6 +17,10 @@ body {
   min-width: 1024px;
 }
 
+h1 {
+  font-size: $banner-font;
+}
+
 h2 {
   font-size: $biggest-font;
 }
@@ -118,6 +122,14 @@ ul {
 
   &__logo img {
     max-height: 50px;
+  }
+
+  &__title {
+    position: absolute;
+    top: 45%;
+    margin: 0;
+    padding: 0 15px;
+    width: 100%;
   }
 }
 
