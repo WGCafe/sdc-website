@@ -52,19 +52,28 @@
 			position: relative;
 			line-height: 1.5;
 		}
-
-		> p:before {
-			content: '';
-			background-image: url('../icon.png');
-			position: absolute;
-			width: 24px;
-			height: 28px;
-			left: -40px;
-		}
 	}
 
 	&__block-text {
 		display: inline-block;
 		margin-bottom: 5px;
+	}
+
+	&__question:before {
+		content: '';
+		background-image: url('../img/is-question.png');
+		position: absolute;
+		width: 24px;
+		height: 28px;
+		left: -40px;
+	}
+
+	&__exclamation:before {
+		content: '';
+		background-image: url('../img/is-exclamation.png');
+		position: absolute;
+		width: 24px;
+		height: 28px;
+		left: -40px;
 	}
 }
