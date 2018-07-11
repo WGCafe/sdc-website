@@ -17,6 +17,10 @@ body {
   min-width: 1024px;
 }
 
+h1 {
+  font-size: $banner-font;
+}
+
 h2 {
   font-size: $biggest-font;
 }
@@ -59,6 +63,10 @@ ul {
   text-align: right;
 }
 
+.text-middle {
+  vertical-align: middle;
+}
+
 .table-top {
   display: table-cell;
   vertical-align: top;
@@ -74,9 +82,19 @@ ul {
   width: 33.33%;
 }
 
+.col-5 {
+  float: left;
+  width: 41.66%;
+}
+
 .col-6 {
   float: left;
   width: 50%;
+}
+
+.col-7 {
+  float: left;
+  width: 58.33%;
 }
 
 .col-9 {
@@ -114,6 +132,14 @@ ul {
   &__logo img {
     max-height: 50px;
   }
+
+  &__title {
+    position: absolute;
+    top: 45%;
+    margin: 0;
+    padding: 0 15px;
+    width: 100%;
+  }
 }
 
 .header-nav {
@@ -143,6 +169,15 @@ ul {
 
   &__item {
     display: inline-block;
+    position: relative;
+  }
+
+  &__submenu {
+    width: 150px;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 
@@ -228,3 +263,4 @@ ul {
 @import './warehouse-integration';
 @import './industry-solutions';
 @import './service';
+@import './micro-warehouse'
