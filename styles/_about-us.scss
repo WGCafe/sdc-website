@@ -53,3 +53,33 @@
     margin: 0 34px;
   }
 }
+
+.au-map {
+  padding: 74px 0;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  &__map {
+    width: 100%;
+    padding-top: 66%;
+    background-color: $middle-gray-2;
+  }
+
+  &__info {
+    display: inline-block;
+    float: right;
+
+    li,
+    p {
+      line-height: 1.5em;
+    }
+  }
+
+  &__company-name {
+    font-weight: 500;
+  }
+}
