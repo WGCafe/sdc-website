@@ -9,15 +9,15 @@
 
   &__text {
     margin: 20px 0;
+    line-height: 1.5em;
     font-weight: 400;
   }
 
   &__content {
-    padding: 20px 0;
+    padding: 30px 0;
   }
 
   &__more {
-    padding: 30px 0;
     display: inline-block;
   }
 
@@ -26,14 +26,158 @@
   }
 
   &__icon {
-    vertical-align: middle;
+    vertical-align: top;
     text-align: center;
     display: inline-block;
     padding: 5px;
-    margin: 0 20px;
+    margin: 0 40px;
     width: 140px;
     height: 140px;
     border: 1px dashed $middle-gray-1;
     border-radius: 50%;
+  }
+
+  &__icon-content {
+    width: 100%;
+    height: 100%;
+    border: 3px solid $middle-gray-1;
+    border-radius: 50%;
+
+    > div {
+      margin: 50% auto 0;
+
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+    }
+
+    label {
+      display: block;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+  }
+
+  &__more-plus {
+    max-width: 23px;
+  }
+
+  &__more-detail {
+    vertical-align: top;
+    display: inline-block;
+    padding: 14px 0;
+  }
+
+  &__more-text {
+    min-height: 42px;
+    line-height: 1.5em;
+    font-weight: 400;
+  }
+
+  &__more-link {
+    color: inherit;
+    padding: 3px 20px;
+    background-color: $theme-color;
+  }
+}
+
+.hp-business {
+  .col-3 {
+    position: relative;
+    padding-top: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #333333;
+      opacity: 0.7;
+    }
+  }
+
+  &__sort {
+    background-image: url(../img/hp-automatic-sort-bg.jpg);
+  }
+
+  &__dock {
+    background-image: url(../img/hp-platform-dock-bg.jpg);
+  }
+
+  &__storehouse {
+    background-image: url(../img/hp-cloud-storehouse-bg.jpg);
+  }
+
+  &__data {
+    background-image: url(../img/hp-data-analysis-bg.jpg);
+  }
+
+  &__item {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 50%;
+    color: $white;
+    z-index: 2;
+
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+
+    p {
+      font-size: $big-font;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.hp-video {
+  &__list {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.hp-consult {
+  color: $white;
+  background-image: url(../img/home-surpport.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  h2 {
+    font-size: $surpport-font;
+  }
+
+  &__detail {
+    padding: 60px 15px;
+    background-color: #333;
+    opacity: 0.7;
+  }
+
+  &__text {
+    font-size: $bigger-font;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 5px 0;
+    color: $main-color;
+    background-color: $theme-color;
+    font-weight: bold;
+    border-radius: 2px;
   }
 }
