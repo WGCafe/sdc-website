@@ -28,6 +28,7 @@
 }
 
 .system-docking {
+  padding: 70px 15px 40px;
   background-color: $main-color;
   color: $white;
 
@@ -38,11 +39,29 @@
   &__systems {
     position: relative;
     padding: 30px 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 2%;
+      left: 50%;
+      width: 1px;
+      height: 25%;
+      background-color: $white;
+    }
   }
 
   &__logo {
     position: absolute;
     max-width: 120px;
+    top: 30%;
+    left: 50%;
+
+    transform: translate(-50%, -10px);
+    -webkit-transform: translate(-50%, -10px);
+    -moz-transform: translateX(-50%, -10px);
+    -ms-transform: translateX(-50%, -10px);
 
     img {
       max-width: 100%;
@@ -110,7 +129,6 @@
 
   &__express-brands {
     margin-left: 46%;
-    margin-bottom: 15px;
   }
 
   &__platform-item {
@@ -123,5 +141,51 @@
 
   &__express-item {
     margin-bottom: 30px;
+  }
+
+  &__erp-intro,
+  &__express-intro {
+    position: relative;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      max-width: 145px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 40%;
+      background-color: $white;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      width: 40%;
+      height: 1px;
+      background-color: $white;
+    }
+  }
+
+  &__erp-intro:before,
+  &__erp-intro:after {
+    left: 0;
+  }
+
+  &__express-intro:before,
+  &__express-intro:after {
+    right: 0;
+  }
+
+  &__erp-intro {
+    margin-left: 30%;
+  }
+
+  &__express-intro {
+    margin-right: 30%;
   }
 }
