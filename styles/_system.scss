@@ -20,13 +20,6 @@
   }
 }
 
-.system-char {
-	&__img, &__list {
-		display: inline-block;
-		vertical-align: middle;
-	}
-}
-
 .system-docking {
   padding: 70px 15px 40px;
   background-color: $main-color;
@@ -187,5 +180,53 @@
 
   &__express-intro {
     margin-right: 30%;
+  }
+}
+
+.system-chart {
+  padding: 30px 15px;
+
+  img {
+    width: 100%;
+  }
+
+  .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  &__list {
+    display: inline-block;
+    margin-top: 12%;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0 0 20px 20px;
+    border-left: 2px solid $main-color;
+    font-weight: 400;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 0;
+      display: block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid $main-color;
+      background-color: $theme-color;
+      border-radius: 50%;
+
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+    }
   }
 }
