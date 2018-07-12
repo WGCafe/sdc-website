@@ -34,4 +34,78 @@
   &__platform-item {
     display: inline-block;
   }
+
+  &__systems {
+    position: relative;
+    padding: 30px 0;
+  }
+
+  &__logo {
+    position: absolute;
+    max-width: 120px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__platform {
+    display: inline-block;
+    padding: 20px;
+    border: 2px dashed $white;
+    border-radius: 10px;
+
+    span {
+      font-size: $bigger-font;
+    }
+  }
+
+  &__systems,
+  &__erp-list,
+  &__express-list {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__erp-brands,
+  &__express-brands {
+    position: relative;
+    padding: 0 30px;
+    border: 2px dashed $white;
+    max-width: 322px;
+    border-radius: 10px;
+
+    p {
+      font-size: $bigger-font;
+    }
+  }
+
+  &__erp-brands:after,
+  &__express-brands:before {
+    content: "";
+    display: block;
+    width: 32%;
+    height: 1px;
+    background-color: $white;
+  }
+
+  &__express-brands {
+    margin-left: 33%;
+    margin-bottom: 15px;
+  }
+
+  &__platform-item {
+    margin: 5px;
+  }
+
+  &__erp-item {
+    margin-bottom: 15px;
+  }
+
+  &__express-item {
+    margin-bottom: 30px;
+  }
 }
