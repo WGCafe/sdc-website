@@ -13,6 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/video-js.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -176,17 +177,41 @@
     <!-- Home Page videos -->
     <section class="hp-video text-center">
       <h2>未来已来</h2>
-      <ul class="hp-video__list">
+      <ul class="hp-video__list big-container">
         <li class="hp-video__item col-4">
-          <div></div>
+          <div class="hp-video__video">
+            <video id="automation-video" class="video-js" controls preload="auto" poster="automation-vedio.jpg" data-setup="{}">
+              <source src="./videos/automation.mp4" type='video/mp4'>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+          </div>
           <span>自动化货到人分拣系统</span>
         </li>
         <li class="hp-video__item col-4">
-          <div></div>
+          <div class="hp-video__video">
+            <video id="robot-video" class="video-js" controls preload="auto" poster="robot-vedio.jpg" data-setup="{}">
+              <source src="./videos/robot.mp4" type='video/mp4'>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+          </div>
           <span>机器人协同自动化码垛系统</span>
         </li>
         <li class="hp-video__item col-4">
-          <div></div>
+          <div class="hp-video__video">
+            <video id="unloading-video" class="video-js" controls preload="auto" poster="unloading-vedio.jpg" data-setup="{}">
+              <source src="./videos/unloading-unit.mp4" type='video/mp4'>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+          </div>
           <span>机器人自动化卸货单元</span>
         </li>
       </ul>
@@ -256,6 +281,7 @@
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/vendor/video.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
