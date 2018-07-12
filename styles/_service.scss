@@ -1,6 +1,10 @@
 @import './var';
 
 .service {
+	.header {
+		background-image: url(../img/s-banner.jpg);
+	}
+
 	&__title {
 		width: 690px;
 		margin: 50px auto 85px;
