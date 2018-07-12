@@ -1,4 +1,8 @@
-@import './var';
+.is {
+	.header {
+    background-image: url(../img/is-banner.jpg);
+  }
+}
 
 .is-rate {
 	padding-bottom: 55px;
@@ -20,7 +24,7 @@
 		background-image: url(../img/common-oval-bg.png);
     width: 142px;
     height: 142px;
-  }	
+  }
 
   &__item-in{
     > * {
