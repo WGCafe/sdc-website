@@ -1,11 +1,11 @@
-jQuery.validator.addMethod("isCellphone", function(value, element) {
-        var length = value.length;
-        var mobile = /^1[34578]\d{9}$/;/*/^1(3|4|5|7|8)\d{9}$/*/
-        return this.optional(element) || (length == 11 && mobile.test(value));
-    }, "请正确填写您的手机号码");
+// jQuery.validator.addMethod("isCellphone", function(value, element) {
+//     var length = value.length;
+//     var mobile = /^1[34578]\d{9}$/;/*/^1(3|4|5|7|8)\d{9}$/*/
+//     return this.optional(element) || (length == 11 && mobile.test(value));
+// }, "请正确填写您的手机号码");
 
 $(function(){
-  // Header dropdown  
+  // Header dropdown
   $(".header-nav__item").hover(function(){
       $(this).addClass("hover");
       $('.header-nav__submenu', this).css('visibility', 'visible');
