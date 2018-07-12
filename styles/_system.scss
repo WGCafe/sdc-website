@@ -26,3 +26,12 @@
 		vertical-align: middle;
 	}
 }
+
+.system-docking {
+  background-color: $main-color;
+  color: $white;
+
+  &__platform-item {
+    display: inline-block;
+  }
+}
