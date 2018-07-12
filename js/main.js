@@ -1,3 +1,9 @@
+jQuery.validator.addMethod("isCellphone", function(value, element) {
+        var length = value.length;
+        var mobile = /^1[34578]\d{9}$/;/*/^1(3|4|5|7|8)\d{9}$/*/
+        return this.optional(element) || (length == 11 && mobile.test(value));
+    }, "请正确填写您的手机号码");
+
 $(function(){
   // Header dropdown  
   $(".header-nav__item").hover(function(){
@@ -26,6 +32,17 @@ $(function(){
       job: {
         required: true,
         minlength: 1
+      },
+      email: {
+        required: true,
+        email:true
+      },
+      cellphone: {
+        required: true,
+        isCellphone: true
+      },
+      wechat: {
+        required: false
       }
     },
     messages: {
@@ -40,6 +57,13 @@ $(function(){
       },
       job: {
         required: "请输入您的职业"
+      },
+      email: {
+        required: "请输入您的邮箱",
+        email: "请正确填写您的邮箱地址"
+      },
+      cellphone: {
+        required: "请输入您的手机号"
       }
      }
     })
