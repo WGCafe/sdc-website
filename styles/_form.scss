@@ -18,4 +18,13 @@
       color: red;
     }
   }
+
+  &__header {
+    padding: 5%;
+    background-color: $white;
+
+    .header-nav a {
+      color: $main-color;
+    }
+  }
 }

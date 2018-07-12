@@ -10,7 +10,7 @@
 	}
 
 	&__item {
-		width: 16.3%;
+		width: 16%;
 		text-align: center;
 		display: inline-flex;
 	}
@@ -18,8 +18,9 @@
 	&__item-out {
 		position: relative;
 		background-image: url(../img/common-oval-bg.png);
-    width: 142px;
-    height: 142px;
+    width: 140px;
+    height: 140px;
+    margin: auto;
   }	
 
   &__item-in{
