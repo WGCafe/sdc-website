@@ -60,6 +60,30 @@
     }
   }
 
+  &__erp,
+  &__express {
+    position: relative;
+  }
+
+  &__erp:after,
+  &__express:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    display: block;
+    width: 30%;
+    height: 1px;
+    background-color: $white;
+  }
+
+  &__erp:after {
+    left: 54%;
+  }
+
+  &__express:before {
+    right: 54%;
+  }
+
   &__systems,
   &__erp-list,
   &__express-list {
@@ -75,6 +99,7 @@
     position: relative;
     padding: 0 30px;
     border: 2px dashed $white;
+    width: 54%;
     max-width: 322px;
     border-radius: 10px;
 
@@ -83,17 +108,8 @@
     }
   }
 
-  &__erp-brands:after,
-  &__express-brands:before {
-    content: "";
-    display: block;
-    width: 32%;
-    height: 1px;
-    background-color: $white;
-  }
-
   &__express-brands {
-    margin-left: 33%;
+    margin-left: 46%;
     margin-bottom: 15px;
   }
 
