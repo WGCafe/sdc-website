@@ -3,7 +3,7 @@
 
   &-wrapper {
     background-color: $white;
-    padding: 38px 218px 50px;
+    margin: 38px 218px 50px;
   }
 
   &-group {
@@ -25,6 +25,49 @@
 
     .header-nav a {
       color: $main-color;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    margin: 37px auto 10px;
+  }
+
+  &__description {
+    margin-bottom: 35px;
+  }
+
+  .form-group .error,
+  .form-group__require,
+  .form-group__label {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .form-group__input, .form-group__select {
+    display: block;
+    width: 70%;
+    height: 60px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .form-group {
+    margin-bottom: 35px;
+  }
+
+  &__submit {
+    width: 70%;
+    text-align: left;
+    margin: auto;
+
+    .submit {
+      width: 130px;
+      height: 48px;
+      border-radius: 2px;
+      background-color: $theme-color;
     }
   }
 }

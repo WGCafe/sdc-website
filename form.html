@@ -82,10 +82,10 @@
     </header>
 
     <!-- Form -->
-    <section class="form">
+    <section class="form text-center">
       <form id="contact_form" class="container form-wrapper" method="" action="" >
-        <h3>服务咨询</h3>
-        <p>与我们联系，我们将为您设计符合您的企业发展供应链方案</p>
+        <h3 class="form__title">服务咨询</h3>
+        <p class="form__description">与我们联系，我们将为您设计符合您的企业发展供应链方案</p>
         <div class="form-group">
           <label class="form-group__label" for="name">姓名<em class="form-group__require">*</em></label>
           <input class="form-group__input" id="name" name="name" minlength="2" type="text" required>
@@ -121,13 +121,15 @@
         </div>
         <div class="form-group">
           <label class="form-group__label" for="job">您需要的服务</label>
-          <input type="checkbox" name="microWarehouse" value="microWarehouse"/>小微仓
-          <input type="checkbox" name="allChannelWarehouse" value="allChannelWarehouse"/>全渠道仓
-          <input type="checkbox" name="urbanDistribution" value="urbanDistribution"/>城市配送
-          <input type="checkbox" name="longHaulTransport" value="longHaulTransport"/>长途运输
-          <input type="checkbox" name="others" value="others"/>其他服务
+          <div class="form-group__input">
+            <input type="checkbox" name="microWarehouse" value="microWarehouse"/>小微仓
+            <input type="checkbox" name="allChannelWarehouse" value="allChannelWarehouse"/>全渠道仓
+            <input type="checkbox" name="urbanDistribution" value="urbanDistribution"/>城市配送
+            <input type="checkbox" name="longHaulTransport" value="longHaulTransport"/>长途运输
+            <input type="checkbox" name="others" value="others"/>其他服务
+          </div>
         </div>
-        <div class="form-group">
+        <div class="form-group form__submit">
           <input class="submit" type="submit" value="Submit">
         </div>
       </form>
