@@ -1,0 +1,21 @@
+.form {
+  background-color: $light-gray;
+
+  &-wrapper {
+    background-color: $white;
+    padding: 38px 218px 50px;
+  }
+
+  &-group {
+    &__label {}
+
+    &__input {}
+
+    &__select {}
+
+    .error,
+    &__require {
+      color: red;
+    }
+  }
+}
