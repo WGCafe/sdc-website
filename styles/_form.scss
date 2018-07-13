@@ -1,9 +1,30 @@
-.form {
-  background-color: $light-gray;
+.form-header {
+  background-color: $white;
+  margin-bottom: 40px;
 
+  .header__detail {
+    margin: 0 auto;
+  }
+
+  .header__detail:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .header-nav a {
+    color: $main-color;
+  }
+}
+
+.form-body {
+  background-color: $light-gray;
+}
+
+.form {
   &-wrapper {
     background-color: $white;
-    margin: 38px 218px 50px;
+    margin: 0 auto;
   }
 
   &-group {
@@ -16,15 +37,6 @@
     .error,
     &__require {
       color: red;
-    }
-  }
-
-  &__header {
-    padding: 5%;
-    background-color: $white;
-
-    .header-nav a {
-      color: $main-color;
     }
   }
 
