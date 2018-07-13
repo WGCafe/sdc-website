@@ -125,7 +125,7 @@
     <section class="au-map container">
       <div class="col-7">
           <div class="au-map__map">
-            <div></div>
+            <div id="allmap"></div>
           </div>
       </div>
       <div class="col-5">
@@ -199,6 +199,26 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    function loadJScript() {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "http://api.map.baidu.com/api?v=2.0&ak=您的密钥&callback=init";
+      document.body.appendChild(script);
+    }
+    function init() {
+      var map = new BMap.Map("allmap");            // 创建Map实例
+      var point = new BMap.Point(121.319094, 31.197098); // 创建点坐标
+      var marker = new BMap.Marker(point);
+
+      map.centerAndZoom(point, 17);
+      map.enableScrollWheelZoom();
+      // 初始化地图， 设置中心点坐标和地图级别
+      //启用滚轮放大缩小
+      map.addOverlay(marker);
+    }
+    window.onload = loadJScript;
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- <script>
