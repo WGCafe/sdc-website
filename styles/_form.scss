@@ -15,6 +15,10 @@
   .header-nav a {
     color: $main-color;
   }
+
+  .header-nav__submenu-item a {
+    color: $white;
+  }
 }
 
 .form-footer {
