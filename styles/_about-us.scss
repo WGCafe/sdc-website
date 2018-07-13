@@ -57,6 +57,14 @@
 .au-map {
   padding: 74px 0;
 
+  #allmap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   &:after {
     content: "";
     display: block;
@@ -64,6 +72,7 @@
   }
 
   &__map {
+    position: relative;
     width: 100%;
     padding-top: 66%;
     background-color: $middle-gray-2;
