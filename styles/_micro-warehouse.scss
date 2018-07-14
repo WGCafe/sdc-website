@@ -94,6 +94,10 @@
   &__item {
     margin: 24px 0 6px;
   }
+
+  &__item-text {
+    font-size: $biggest-font;
+  }
 }
 
 .mw-advantage {
