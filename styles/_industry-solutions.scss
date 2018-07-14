@@ -130,3 +130,25 @@
 		left: -40px;
 	}
 }
+
+@media (max-width:768px){  
+  .is-rate__item {
+  	width: 100%;
+  }
+}
+
+@media (max-width:960px){  
+  .container {
+  	max-width: 768px;
+  }
+
+  .is-rate__item {
+  	width: 35%;
+  	margin-bottom: 5%;
+
+  	&-out {
+  		width: 142px;
+  		height: 142px;
+  	}
+  }
+}
