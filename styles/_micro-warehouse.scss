@@ -11,12 +11,18 @@
 .mw-annoy {
   padding: 50px 15px;
 
+  p {
+    margin: 0;
+    line-height: 1.7em;
+  }
+
   &__title {
     margin: 0 0 40px;
   }
 
   &__list {
     padding: 10px 0;
+    margin-top: 20px;
   }
 
   &__item {
@@ -87,6 +93,10 @@
 
   &__item {
     margin: 24px 0 6px;
+  }
+
+  &__item-text {
+    font-size: $biggest-font;
   }
 }
 
