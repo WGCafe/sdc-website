@@ -1,5 +1,5 @@
 $(function(){
-  $('.owl-carousel').owlCarousel({
+  $('.header__carousel').owlCarousel({
     loop:true,
     autoPlay: true,
     margin:10,
