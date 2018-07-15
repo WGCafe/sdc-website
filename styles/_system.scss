@@ -322,3 +322,104 @@
     }
   }
 }
+
+@media (max-width: 620px) {
+  .system {
+    .header {
+      background-position: 80% center;
+      background-size: auto 100%;
+    }
+  }
+
+  .system-docking {
+
+    &__platform {
+      padding: 10px 5px;
+    }
+
+    &__platform-item img {
+      max-height: 40px;
+    }
+
+    &__erp-brands,
+    &__express-brands {
+      width: 95%;
+      margin-left: 2.5%;
+
+      p {
+        font-size: $small-font;
+      }
+    }
+
+    &__erp-item.col-6 {
+      width: 100%;
+      margin-bottom: 2px;
+    }
+
+    &__erp-item.col-6 img {
+      width: 60%;
+    }
+
+    &__express-item.col-4 {
+      width: 50%;
+      margin-bottom: 28px;
+    }
+
+    &__erp-intro,
+    &__express-intro {
+      margin: 0;
+    }
+
+    &__erp-intro:before,
+    &__erp-intro:after,
+    &__express-intro:before,
+    &__express-intro:after {
+      content: none;
+    }
+  }
+
+  .system-chart {
+    .col-7,
+    .col-5 {
+      width: 100%;
+    }
+
+    &__list {
+      display: block;
+      margin: 0 7%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .system-docking {
+    &__express-item.col-4 {
+      margin-bottom: 19px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .system-docking {
+    &__platform &__platform-text {
+      font-size: $main-font;
+    }
+
+    &__platform-item img {
+      max-height: 30px;
+    }
+
+    &__erp-item.col-6 img {
+      width: 73%;
+    }
+
+    &__erp-brands &__erp-text,
+    &__express-brands &__express-text {
+      font-size: 9px;
+    }
+
+    &__erp-intro {
+      padding-top: 10px;
+    }
+  }
+}
