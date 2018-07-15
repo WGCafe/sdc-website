@@ -1,5 +1,15 @@
 @import './_var.scss';
 
+.form {
+  .header__detail {
+    padding: 15px;
+  }
+
+  .header-nav {
+    margin: 12px 0;
+  }
+}
+
 .form-header {
   background-color: $white;
   margin-bottom: 40px;
@@ -104,6 +114,30 @@
       border: 0;
       border-radius: 2px;
       background-color: $theme-color;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  form {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    &__wrapper {
+      padding: 20px;
+    }
+
+    .form-group__input,
+    .form-group__select,
+    .form-group .error,
+    .form-group__require,
+    .form__submit,
+    .submit,
+    .form-group__label {
+      width: 100%;
     }
   }
 }
