@@ -108,7 +108,7 @@ ul {
 }
 
 .block-mobile {
-  display: none;
+  display: none !important;
 }
 
 .header {
@@ -374,7 +374,7 @@ ul {
 
 @media (max-width: 767px) {
   .block-mobile {
-    display: block;
+    display: block !important;
   }
 
   .hidden-mobile {
