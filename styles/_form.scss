@@ -1,0 +1,109 @@
+@import './_var.scss';
+
+.form-header {
+  background-color: $white;
+  margin-bottom: 40px;
+
+  .header__detail {
+    margin: 0 auto;
+  }
+
+  .header__detail:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .header-nav a {
+    color: $main-color;
+  }
+
+  .header-nav__submenu-item a {
+    color: $white;
+  }
+}
+
+.form-footer {
+  margin-top: 40px;
+}
+
+.form-body {
+  background-color: $light-gray;
+}
+
+.form {
+  &__wrapper {
+    background-color: $white;
+    padding: 40px 15px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    display: inline-block;
+    margin: 0 auto 10px;
+    font-size: $surpport-font;
+    font-weight: normal;
+  }
+
+  &__description {
+    margin-bottom: 35px;
+    font-size: $bigger-font;
+  }
+
+  .form-group .error,
+  .form-group__require,
+  .form-group__label {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .form-group__label, .form-checkbox__label {
+    font-size: $bigger-font;
+  }
+
+  .form-checkbox {
+    display: inline-block;
+    margin-right: 40px;
+  }
+
+  .form-group__input, .form-group__select {
+    display: block;
+    width: 70%;
+    height: 60px;
+    margin: auto;
+    text-align: left;
+    font-size: $big-font;
+    background-color: $white;
+    border-radius: 4px;
+    border: solid 1px $footer-color;
+  }
+
+  .form-group {
+    margin-bottom: 35px;
+  }
+
+  .form-group__require,
+  .error {
+    color: red;
+  }
+
+  .form-group__select-option {
+    height: 30px;
+  }
+
+  &__submit {
+    width: 70%;
+    text-align: left;
+    margin: auto;
+
+    .submit {
+      width: 130px;
+      height: 48px;
+      border: 0;
+      border-radius: 2px;
+      background-color: $theme-color;
+    }
+  }
+}

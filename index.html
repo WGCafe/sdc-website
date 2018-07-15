@@ -13,6 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/video-js.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -22,23 +23,319 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div>
-    <header></header>
-    <footer></footer>
+  <div class="home">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__detail">
+          <div class="header__logo">
+            <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+          </div>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a href="./service.html" class="header-nav__dropdown-btn">服务</a>
+              <ul class="header-nav__submenu">
+                <li class="header-nav__submenu-item">
+                  <a href="./service.html#service-title">秒仓服务概览</a>
+                </li>
+                <li class="header-nav__submenu-item">
+                  <a href="./service.html#service-mw">小微仓</a>
+                </li>
+                <li class="header-nav__submenu-item">
+                  <a href="./service.html#service-wi">仓配一体化</a>
+                </li>
+                <li class="header-nav__submenu-item">
+                  <a href="./service.html#service-ow">海外仓</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-nav__item">
+              <a href="./industry-solutions.html">行业解决方案</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./overseas-warehouse.html">海外仓</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__dropdown-btn">创新</a>
+              <ul class="header-nav__submenu">
+                <li class="header-nav__submenu-item">
+                  <a href="">订单池</a>
+                </li>
+                <li class="header-nav__submenu-item">
+                  <a href="">穿梭机器人</a>
+                </li>
+                <li class="header-nav__submenu-item">
+                  <a href="">分拣机器人</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-nav__item">
+              <a href="./about-us.html">关于我们</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">运单查询</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="language" href="">EN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__title text-left">
+        <h1 class="big-container">智能供应链专家</h1>
+      </div>
+    </header>
+
+    <!-- Home Page Introduction -->
+    <section class="hp-intro container text-center">
+      <h2 class="hp-intro__title">专注于电子商务仓配一体化物流服务</h2>
+      <p class="hp-intro__text text-left">秒仓，作为一家以技术和自动化创新驱动的仓配一体化供应链服务商，专注于帮助中小微商家，零售类，贸易商等企业解决仓内的成本和效率问题。致力于帮助中小微商家解决系统能力弱，仓内运营成本高，效率低，库存能见度差等问题。</p>
+      <div class="hp-intro__content">
+        <div class="hp-intro__more text-middle text-right">
+          <div class="hp-intro__more-detail">
+            <p class="hp-intro__more-text">OMS, WMS, BMS, TMS, CRM</p>
+            <a href="#" class="hp-intro__more-link">查看更多</a>
+          </div>
+          <div class="hp-intro__icon">
+            <div class="hp-intro__icon-content">
+              <div>
+                <img src="./img/home-product.png" alt="flashspace-home-product">
+                <label>产品</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hp-intro__more-plus text-middle" src="./img/home-plus.png" alt="flashspace-plus">
+        <div class="hp-intro__more text-middle text-left">
+          <div class="hp-intro__icon">
+            <div class="hp-intro__icon-content">
+              <div>
+                <img src="./img/home-service.png" alt="flashspace-home-service">
+                <label>服务</label>
+              </div>
+            </div>
+          </div>
+          <div class="hp-intro__more-detail">
+            <p class="hp-intro__more-text">小微仓，电商仓，跨境仓，保税仓，冷链仓，全渠道仓</p>
+            <a href="#" class="hp-intro__more-link">查看更多</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Home Page Introduction -->
+
+    <!-- Home Page work business -->
+    <section class="hp-business text-center">
+      <div class="col-3 hp-business__sort">
+        <div class="hp-business__item">
+          <img src="./img/hp-automatic-sort.png" alt="home-page-business-automatic-sort">
+          <h3>自动化分拣</h3>
+          <p>
+            技术驱动人机协作<br/>
+            作业流程高效透明<br/>
+            减少人工干预成本
+          </p>
+        </div>
+        <div class="hp-business-hover">
+          <div class="hp-business__item">
+            <img src="./img/hp-automatic-sort-hover.png" alt="home-page-business-automatic-sort">
+            <h3>自动化分拣</h3>
+            <p>
+              技术驱动人机协作<br/>
+              作业流程高效透明<br/>
+              减少人工干预成本
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 hp-business__dock">
+        <div class="hp-business__item">
+          <img src="./img/hp-platform-dock.png" alt="home-page-business-platform-dock">
+          <h3>全平台对接</h3>
+          <p>
+            标准API接口<br/>
+            免费对接全平台订单<br/>
+            数据自动获取和自动推送
+          </p>
+        </div>
+        <div class="hp-business-hover">
+          <div class="hp-business__item">
+            <img src="./img/hp-platform-dock-hover.png" alt="home-page-business-platform-dock">
+            <h3>全平台对接</h3>
+            <p>
+              标准API接口<br/>
+              免费对接全平台订单<br/>
+              数据自动获取和自动推送
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 hp-business__storehouse">
+        <div class="hp-business__item">
+          <img src="./img/hp-cloud-storehouse.png" alt="home-page-business-cloud-storehouse">
+          <h3>智能云仓</h3>
+          <p>
+            大数据分析智能分仓<br/>
+            帮助商家降低物流成本<br/>
+            缩短交付时效提升用户体验<br/>
+            精准配置不同区域库存量
+          </p>
+        </div>
+        <div class="hp-business-hover">
+          <div class="hp-business__item">
+            <img src="./img/hp-cloud-storehouse-hover.png" alt="home-page-business-cloud-storehouse">
+            <h3>智能云仓</h3>
+            <p>
+              大数据分析智能分仓<br/>
+              帮助商家降低物流成本<br/>
+              缩短交付时效提升用户体验<br/>
+              精准配置不同区域库存量
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 hp-business__data">
+        <div class="hp-business__item">
+          <img src="./img/hp-data-analysis.png" alt="home-page-business-data-analysis">
+          <h3>免费数据分析</h3>
+          <p>
+            数据透明定时推送<br/>
+            库存智能化分析<br/>
+            多维度数据结构分析
+          </p>
+        </div>
+        <div class="hp-business-hover">
+          <div class="hp-business__item">
+            <img src="./img/hp-data-analysis-hover.png" alt="home-page-business-data-analysis">
+            <h3>免费数据分析</h3>
+            <p>
+              数据透明定时推送<br/>
+              库存智能化分析<br/>
+              多维度数据结构分析
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Home Page work business -->
+
+    <!-- Home Page videos -->
+    <section class="hp-video text-center">
+      <h2>未来已来</h2>
+      <ul class="hp-video__list big-container">
+        <li class="hp-video__item col-4">
+          <div class="hp-video__video">
+            <video id="automation-video" class="video-js" controls preload="auto" poster="automation-vedio.jpg" data-setup="{}">
+              <source src="./videos/automation.mp4" type='video/mp4'>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+          </div>
+          <span>自动化货到人分拣系统</span>
+        </li>
+        <li class="hp-video__item col-4">
+          <div class="hp-video__video">
+            <video id="robot-video" class="video-js" controls preload="auto" poster="robot-vedio.jpg" data-setup="{}">
+              <source src="./videos/robot.mp4" type='video/mp4'>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+          </div>
+          <span>机器人协同自动化码垛系统</span>
+        </li>
+        <li class="hp-video__item col-4">
+          <div class="hp-video__video">
+            <video id="unloading-video" class="video-js" controls preload="auto" poster="unloading-vedio.jpg" data-setup="{}">
+              <source src="./videos/unloading-unit.mp4" type='video/mp4'>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+          </div>
+          <span>机器人自动化卸货单元</span>
+        </li>
+      </ul>
+    </section>
+    <!-- end of Home Page videos -->
+
+    <!-- Home Page consult -->
+    <section class="hp-consult text-center">
+      <div class="hp-consult__detail">
+        <h2 class="hp-consult__title">欢迎拨打: 021-59840032</h2>
+        <p class="hp-consult__text">点击咨询，立即迈入智能物流时代</p>
+        <a href="#" class="hp-consult__btn">服务咨询</a>
+        <p class="hp-consult__text">带您体验秒仓独到的供应链服务</p>
+      </div>
+    </section>
+    <!-- end of Home Page consult -->
+
+    <footer class="footer">
+      <div class="footer__content container">
+        <div class="col-9">
+          <ul class="footer__address">
+            <li>Flash Space  Technology (Shanghai）Co.,LTD</li>
+            <li>秒仓信息科技（上海）有限公司</li>
+            <li>中国上海闵行区申 南路1058号龙湖天地D栋805&nbsp;&nbsp;&nbsp;邮编201107</li>
+          </ul>
+          <ul class="footer__phones">
+            <li>订单查询 +86 21 5984 0031</li>
+            <li>销售支持 +86 139 1664 8355</li>
+            <li>技术支持：+86 180 2012 9015</li>
+          </ul>
+          <hr/>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="./index.html">首页</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="./service.html">服务</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="./industry-solutions.html">行业解决方案</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="./overseas-warehouse.html">海外仓</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">创新</a>
+            </li>
+          </ul>
+          <ul class="footer__extraInfo">
+            <li class="footer__extraInfo-item">Copyright 2018 xxxx All rights reserved.</li>
+            <li class="footer__extraInfo-item">沪ICP备12345678号-2</li>
+            <li class="footer__extraInfo-item">
+              <a href="#">隐私政策</a>
+            </li>
+            <li class="footer__extraInfo-item">
+              <a href="#">网站地图</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 text-right">
+          <img class="footer__qrcode" src="./img/footer-qrcode.png" alt="flashspace-qrcode">
+        </div>
+      </div>
+    </footer>
   </div>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/vendor/video.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
+  <!-- <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
 </body>
 
 </html>

@@ -1,0 +1,100 @@
+.wi {
+  .header {
+    background-image: url(../img/wi-banner.jpg);
+  }
+}
+
+.wi-intro {
+  padding: 52px 0 70px;
+
+  &__text {
+    display: inline-block;
+    max-width: 690px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 22px;
+    text-align: left;
+    font-size: $big-font;
+  }
+
+  &__list {
+    padding-top: 44px;
+    overflow: hidden;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0 22px;
+  }
+
+  &__item-content {
+    display: table-cell;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    vertical-align: middle;
+    background-image: url(../img/common-oval-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  &__item-img {
+    padding-bottom: 10px;
+  }
+
+  &__item-text {
+    display: inline-block;
+    width: 100%;
+    font-size: $bigger-font;
+    color: $darker-gray;
+  }
+}
+
+.wi-advantage {
+  padding: 85px 0 100px;
+  background: $light-gray;
+
+  &__wrapper {
+    max-width: 1000px;
+  }
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  &__list {
+    padding-top: 18px;
+    overflow: hidden;
+  }
+
+  &__item {
+    padding: 24px;
+    text-align: left;
+  }
+
+  &__item-img {
+    min-width: 64px;
+    height: 46px;
+  }
+
+  &__item-intro {
+    padding-left: 10px;
+  }
+
+  &__item-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $darker-gray;
+  }
+
+  &__item-text {
+    margin: 0;
+  }
+}
