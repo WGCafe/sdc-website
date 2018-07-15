@@ -230,3 +230,95 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .system-docking{
+    &__erp-brands,
+    &__express-brands  {
+      padding: 0 5px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .system-docking{
+    &__erp-brands,
+    &__express-brands  {
+      width: 74%;
+      max-width: none;
+    }
+
+    &__express-brands {
+      margin-left: 26%;
+    }
+
+    &__erp:after,
+    &__express:before {
+      width: 10%;
+    }
+
+    &__erp:after {
+      left: 74%;
+    }
+
+    &__express:before {
+      right: 74%;
+    }
+
+    &__erp-intro,
+    &__express-intro {
+      padding-top: 5%;
+    }
+
+    &__erp-intro:before,
+    &__express-intro:before {
+      margin-top: -7%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .system-docking{
+    &__systems {
+      padding: 100px 0 20px;
+
+      &:before {
+        height: 30px;
+      }
+    }
+
+    &__erp:after,
+    &__express:before {
+      top: -30px;
+      width: 30%;
+    }
+
+    &__erp:after {
+      left: 50%;
+    }
+
+    &__express:before {
+      right: 50%;
+    }
+
+    &__erp-brands,
+    &__express-brands  {
+      margin-left: 5%;
+      width: 90%;
+    }
+
+    &__erp-brands:before,
+    &__express-brands:after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      width: 1px;
+      height: 30px;
+      background-color: #fff;
+    }
+
+    &__logo {
+      top: 54px;
+    }
+  }
+}
