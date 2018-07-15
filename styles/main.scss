@@ -307,6 +307,10 @@ ul {
   li {
     display: inline-block;
     margin-right: 90px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
