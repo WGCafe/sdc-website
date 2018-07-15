@@ -92,3 +92,77 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 1023px) {
+  .au-description {
+    max-width: 768px;
+    margin: auto;
+
+    &__text {
+      font-size: $main-font;
+    }
+  }
+
+  .au-duty {
+
+    &__vision-item {
+      margin: 0 10px;
+    }
+
+    &__title,
+    &__content {
+      padding: 10px 0;
+    }
+
+    span {
+      font-size: $big-font;
+    }
+  }
+
+  .au-map {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .au-description {
+    &__text {
+      font-size: $small-font;
+    }
+  }
+
+  .au-duty {
+
+    img {
+      max-width: 26px;
+    }
+
+    &__detail {
+     padding: 20px 15px;
+    }
+
+    &__visions {
+      text-align: left;
+      display: inline-block;
+    }
+
+    &__vision-item {
+      padding: 20px 0;
+      display: block;
+    }
+  }
+
+  .au-map {
+    .col-7,
+    .col-5 {
+      width: 100%;
+    }
+
+    .au-map__info {
+      display: block;
+      float: none;
+      margin: 20px 0;
+    }
+  }
+}

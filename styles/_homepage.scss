@@ -305,6 +305,11 @@
 }
 
 @media (max-width: 767px) {
+  .home .header {
+    background-position-x: right;
+    background-size: auto 100%;
+  }
+
   .hp-intro {
     .col-6 {
       text-align: center;
