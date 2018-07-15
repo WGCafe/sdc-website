@@ -124,7 +124,15 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
+  .form-header {
+    margin-bottom: 0;
+  }
+
+  .form-footer {
+    margin-top: 0;
+  }
+
   .form {
     &__wrapper {
       padding: 20px;
