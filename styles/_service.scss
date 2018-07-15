@@ -6,7 +6,7 @@
 	}
 
 	&__title {
-		width: 690px;
+		width: 80%;
 		padding: 50px 0;
 		margin: 0 auto 30px;
 	}
@@ -80,5 +80,47 @@
 	&__text {
 		margin: 0;
 		line-height: 1.5;
+	}
+}
+
+@media (max-width:767px){  
+  .is-rate__item {
+  	width: 100%;
+  }
+
+  .service-intro {
+	  .col-6 {
+	  	float: none;
+	  	width: initial;
+	  }
+
+	  &__block {
+	  	padding: 10%;
+	  }
+
+	  .split-block {
+	  	padding: initial;
+
+	  	.bg-opacity {
+	  		opacity: 0.7;
+	  		padding: 50%;
+	  	}
+
+	  	&#service-mw .bg-opacity {
+	  		background-image: url('../img/s-micro-warehouse.jpg');
+	  	}
+
+	  	&#service-wi .bg-opacity {
+	  		background-image: url('../img/s-warehouse-integration.jpg');
+	  	}
+
+	  	&#service-ow .bg-opacity {
+	  		background-image: url('../img/s-overseas-warehouse.jpg');
+	  	}
+	  }
+  }
+
+	.service-intro__block-img {
+		display: none;
 	}
 }
