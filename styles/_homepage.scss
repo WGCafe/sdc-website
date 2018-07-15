@@ -11,12 +11,12 @@
     width: 100%;
     height: 100%;
   }
-  
+
   .header__carousel .item {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 480px;
+    height: 100%;
   }
 
   .header__carousel-item1 {
@@ -28,6 +28,35 @@
   }
 
   .header__carousel-item3 {
+    background-image: url(../img/home-surpport.jpg);
+  }
+
+  .owl-stage-outer,
+  .owl-stage,
+  .owl-item {
+    height: 100%;
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    margin-top: 0;
+  }
+
+  .owl-dot,
+  .owl-dot.active {
+    outline: none;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: $white;
   }
 }
 
