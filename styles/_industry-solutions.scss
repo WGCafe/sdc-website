@@ -131,7 +131,23 @@
 	}
 }
 
-@media (max-width:768px){  
+@media (max-width:960px) and (min-width:768px) {  
+  .container {
+  	max-width: 768px;
+  }
+
+  .is-rate__item {
+  	width: 35%;
+  	margin-bottom: 5%;
+
+  	&-out {
+  		width: 142px;
+  		height: 142px;
+  	}
+  }
+}
+
+@media (max-width:767px){  
   .is-rate__item {
   	width: 100%;
   }
@@ -167,20 +183,4 @@
 	.is-intro__block-img {
 		display: none;
 	}
-}
-
-@media (max-width:960px){  
-  .container {
-  	max-width: 768px;
-  }
-
-  .is-rate__item {
-  	width: 35%;
-  	margin-bottom: 5%;
-
-  	&-out {
-  		width: 142px;
-  		height: 142px;
-  	}
-  }
 }
