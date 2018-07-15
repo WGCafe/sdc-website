@@ -83,6 +83,12 @@
 	}
 }
 
+@media (max-width: 960px) {
+	.service-intro__block {
+		padding: 15px;
+	}
+}
+
 @media (max-width:767px){  
   .is-rate__item {
   	width: 100%;
@@ -92,10 +98,6 @@
 	  .col-6 {
 	  	float: none;
 	  	width: initial;
-	  }
-
-	  &__block {
-	  	padding: 10%;
 	  }
 
 	  .split-block {
