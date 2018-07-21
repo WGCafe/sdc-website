@@ -29,12 +29,19 @@
           <div class="header__logo">
             <a href="./index.html"><img src="./img/logo.png" alt=""></a>
           </div>
+          <div class="header__menu block-mobile">
+            <img src="./img/menu.png" alt="">
+          </div>
           <ul class="header-nav">
+            <li class="header__close header-nav__item--m block-mobile">
+              <img src="./img/close.png" alt="">
+            </li>
             <li class="header-nav__item">
               <a href="./index.html">首页</a>
             </li>
             <li class="header-nav__item">
-              <a href="./service.html" class="header-nav__dropdown-btn">服务</a>
+              <a href="./service.html" class="header-nav__dropdown-btn hidden-mobile">服务</a>
+              <a class="header-nav__dropdown-btn block-mobile">服务</a>
               <ul class="header-nav__submenu">
                 <li class="header-nav__submenu-item">
                   <a href="./service.html#service-title">秒仓服务概览</a>
@@ -57,7 +64,8 @@
               <a href="./overseas-warehouse.html">海外仓</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__dropdown-btn">创新</a>
+              <a href="./system.html" class="header-nav__dropdown-btn hidden-mobile">创新</a>
+              <a class="header-nav__dropdown-btn block-mobile">创新</a>
               <ul class="header-nav__submenu">
                 <li class="header-nav__submenu-item">
                   <a href="./system.html">订单池</a>
@@ -89,43 +97,53 @@
 
     <!-- Warehouse Integration Introduction -->
     <section class="container text-center wi-intro">
-      <p class="wi-intro__text">
-        闪电仓的目标是帮助贸易商、经销商、电商企业及代运营公司等流通消费品领域解决仓配一体化
-      </p>
-      <ul class="wi-intro__list">
-        <li class="wi-intro__item">
-          <div class="wi-intro__item-content">
-            <img class="wi-intro__item-img" src="./img/wi-order.png">
-            <span class="wi-intro__item-text">订单管理</span>
-          </div>
-        </li>
-        <li class="wi-intro__item">
-          <div class="wi-intro__item-content">
-            <img class="wi-intro__item-img" src="./img/wi-stock.png">
-            <span class="wi-intro__item-text">库存管控</span>
-          </div>
-        </li>
-        <li class="wi-intro__item">
-          <div class="wi-intro__item-content">
-            <img class="wi-intro__item-img" src="./img/wi-promotion.png">
-            <span class="wi-intro__item-text">大促管控</span>
-          </div>
-        </li>
-        <li class="wi-intro__item">
-          <div class="wi-intro__item-content">
-            <img class="wi-intro__item-img" src="./img/wi-exception.png">
-            <span class="wi-intro__item-text">异常处理</span>
-          </div>
-        </li>
-        <li class="wi-intro__item">
-          <div class="wi-intro__item-content">
-            <img class="wi-intro__item-img" src="./img/wi-express.png">
-            <span class="wi-intro__item-text">快递资源</span>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <!-- end of Warehouse Integration Introduction -->
+        <p class="wi-intro__text">
+          闪电仓的目标是帮助贸易商、经销商、电商企业及代运营公司等流通消费品领域解决仓配一体化
+        </p>
+        <ul class="wi-intro__list">
+          <li class="wi-intro__item">
+            <div class="wi-intro__item-wrapper">
+              <div class="wi-intro__item-content">
+                <img class="wi-intro__item-img" src="../img/wi-order.png">
+                <span class="wi-intro__item-text">订单管理</span>
+              </div>
+            </div>
+          </li>
+          <li class="wi-intro__item">
+            <div class="wi-intro__item-wrapper">
+              <div class="wi-intro__item-content">
+                <img class="wi-intro__item-img" src="../img/wi-stock.png">
+                <span class="wi-intro__item-text">库存管控</span>
+              </div>
+            </div>
+          </li>
+          <li class="wi-intro__item">
+            <div class="wi-intro__item-wrapper">
+              <div class="wi-intro__item-content">
+                <img class="wi-intro__item-img" src="../img/wi-promotion.png">
+                <span class="wi-intro__item-text">大促管控</span>
+              </div>
+            </div>
+          </li>
+          <li class="wi-intro__item">
+            <div class="wi-intro__item-wrapper">
+              <div class="wi-intro__item-content">
+                <img class="wi-intro__item-img" src="../img/wi-exception.png">
+                <span class="wi-intro__item-text">异常处理</span>
+              </div>
+            </div>
+          </li>
+          <li class="wi-intro__item">
+            <div class="wi-intro__item-wrapper">
+              <div class="wi-intro__item-content">
+                <img class="wi-intro__item-img" src="../img/wi-express.png">
+                <span class="wi-intro__item-text">快递资源</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- end of Warehouse Integration Introduction -->
 
     <!-- Warehouse Integration Advantage -->
     <section class="wi-advantage">
@@ -223,7 +241,7 @@
             </li>
           </ul>
           <ul class="footer__extraInfo">
-            <li class="footer__extraInfo-item">Copyright 2018 xxxx All rights reserved.</li>
+            <li class="footer__extraInfo-item">Copyright 2018 Flash Space All rights reserved.</li>
             <li class="footer__extraInfo-item">沪ICP备12345678号-2</li>
             <li class="footer__extraInfo-item">
               <a href="#">隐私政策</a>

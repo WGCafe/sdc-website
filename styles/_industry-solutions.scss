@@ -8,7 +8,7 @@
 	padding-bottom: 55px;
 
 	&__title {
-		width: 730px;
+		width: 80%;
 		margin: 45px auto 35px;
 		text-align: left;
 	}
@@ -128,5 +128,77 @@
 		width: 24px;
 		height: 28px;
 		left: -40px;
+	}
+}
+
+@media (max-width:960px) and (min-width:768px) {  
+  .container {
+  	max-width: 768px;
+  }
+
+  .is-rate__item {
+  	width: 35%;
+  	margin-bottom: 5%;
+
+  	&-out {
+  		width: 142px;
+  		height: 142px;
+  	}
+  }
+
+  .is-intro {
+  	.split-block {
+  		padding: 20%;
+  	}
+  	
+  	&__block {
+  		padding-right: 15px;
+  	}
+  }
+}
+
+@media (max-width:767px){ 
+	.nav li {
+		margin-right: 10px;
+	}
+
+  .is-rate__item {
+  	width: 100%;
+  }
+
+  .is-intro {
+	  .col-6 {
+	  	float: none;
+	  	width: initial;
+	  }
+
+	  &__block {
+  		padding-right: 15px;
+  	}
+
+	  .split-block {
+	  	padding: initial;
+
+	  	.bg-opacity {
+	  		opacity: 0.7;
+	  		padding: 50%;
+	  	}
+
+	  	&#is-clothes .bg-opacity {
+	  		background-image: url('../img/is-clothes.jpg');
+	  	}
+
+	  	&#is-makeup .bg-opacity {
+	  		background-image: url('../img/is-makeup.jpg');
+	  	}
+
+	  	&#is-shop .bg-opacity {
+	  		background-image: url('../img/is-shop.jpg');
+	  	}
+	  }
+  }
+
+	.is-intro__block-img {
+		display: none;
 	}
 }

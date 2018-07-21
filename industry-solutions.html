@@ -29,12 +29,19 @@
           <div class="header__logo">
             <a href="./index.html"><img src="./img/logo.png" alt=""></a>
           </div>
+          <div class="header__menu block-mobile">
+            <img src="./img/menu.png" alt="">
+          </div>
           <ul class="header-nav">
+            <li class="header__close header-nav__item--m block-mobile">
+              <img src="./img/close.png" alt="">
+            </li>
             <li class="header-nav__item">
               <a href="./index.html">首页</a>
             </li>
             <li class="header-nav__item">
-              <a href="./service.html" class="header-nav__dropdown-btn">服务</a>
+              <a href="./service.html" class="header-nav__dropdown-btn hidden-mobile">服务</a>
+              <a class="header-nav__dropdown-btn block-mobile">服务</a>
               <ul class="header-nav__submenu">
                 <li class="header-nav__submenu-item">
                   <a href="./service.html#service-title">秒仓服务概览</a>
@@ -57,7 +64,8 @@
               <a href="./overseas-warehouse.html">海外仓</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__dropdown-btn">创新</a>
+              <a href="./system.html" class="header-nav__dropdown-btn hidden-mobile">创新</a>
+              <a class="header-nav__dropdown-btn block-mobile">创新</a>
               <ul class="header-nav__submenu">
                 <li class="header-nav__submenu-item">
                   <a href="./system.html">订单池</a>
@@ -160,6 +168,7 @@
     <!-- Industry Solutions Introduction -->
     <section class="is-intro">
       <div class="col-6 split-block" id="is-clothes">
+        <div class="bg-opacity"></div>
         <div class="is-intro__block">
           <h3>服装鞋帽业</h3>
           <p class="is-intro__question">
@@ -173,15 +182,16 @@
         </div>
       </div>
 
-      <div class="col-6 split-block">
+      <div class="col-6 split-block is-intro__block-img">
         <div class="is-intro__block-img--clothes"></div>
       </div>
 
-      <div class="col-6 split-block">
+      <div class="col-6 split-block is-intro__block-img">
         <div class="is-intro__block-img--makeup"></div>
       </div>
 
       <div class="col-6 split-block" id="is-makeup">
+        <div class="bg-opacity"></div>
         <div class="is-intro__block">
           <h3>美妆洗护行业</h3>
           <p class="is-intro__question">美妆洗护类产品具有产品生命周期短、流转速度快、保质期短、产品价值高，消费者分布广等特征，因此品质保障、物流成本、分销渠道、响应速度都决定了企业的竞争力。商品SKU多，易压损或开盖漏液，秒仓有无商品的抗压防护和防溢漏处理经验，通过分仓货更靠近消费者可以减少配送过程中破损。</p>
@@ -194,6 +204,7 @@
       </div>
 
       <div class="col-6 split-block" id="is-shop">
+        <div class="bg-opacity"></div>
         <div class="is-intro__block">
           <h3>便利店</h3>
           <p class="is-intro__question">便利店与消费品零售是与网民日常生活最息息相关，碎片化的需求，SKU数量的增加以及陈列数量的减少，生鲜和即食品类增量渗透，应如何确保有限的空间内货品有效陈列？又如何保证店铺内的补货时效的及时性？还要如何确保不被低效的物流蚕食大量成本？</p>
@@ -204,7 +215,7 @@
         </div>
       </div>
 
-      <div class="col-6 split-block">
+      <div class="col-6 split-block is-intro__block-img">
         <div class="is-intro__block-img--shop"></div>
       </div>
     </section>
@@ -242,7 +253,7 @@
             </li>
           </ul>
           <ul class="footer__extraInfo">
-            <li class="footer__extraInfo-item">Copyright 2018 xxxx All rights reserved.</li>
+            <li class="footer__extraInfo-item">Copyright 2018 Flash Space All rights reserved.</li>
             <li class="footer__extraInfo-item">沪ICP备12345678号-2</li>
             <li class="footer__extraInfo-item">
               <a href="#">隐私政策</a>
