@@ -36,4 +36,4 @@ npm run release
 
 # Coding rules
  
- see [rules.md](./doc/rules.md)
+[rules.md](./doc/rules.md)
