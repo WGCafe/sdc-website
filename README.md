@@ -36,4 +36,4 @@ npm run release
 
 # Coding rules
  
- see sdc-website/doc/rules.md
+ see [rules.md](./doc/rules.md)
